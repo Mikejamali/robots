@@ -1,0 +1,26 @@
+<h3>This Profile</h3>
+<div class="container">
+  {{#users}}
+  <div id="robot_profile">
+    {{#job}}
+    <img src="{{avatar}}" alt="">
+    <h3 id="name">{{name}}</h3>
+    <p>{{university}}</p>
+    <p>{{skills}}</p>
+    <p>{{address}}</p>
+    <p>{{phone}}</p>
+    <p>{{email}}</p>
+    <p>{{job}}</p>
+    <p>{{company}}</p>
+    {{/job}}
+    {{^job}}
+    <img src="{{avatar}}" alt="">
+    <h3 id="name">{{name}}</h3>
+    <p>{{university}}</p>
+    <p>{{skills}}</p>
+    <p>{{phone}}</p>
+    <h4 id="Unemployed">Unemployed</h4>
+    {{/job}}
+    </div>
+  {{/users}}
+</div>
